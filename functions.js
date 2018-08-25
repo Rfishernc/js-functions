@@ -19,3 +19,21 @@ function nomnom(name, food) {
 }
 
 console.log(nomnom('zoe', bearSticks));
+
+function numberAdder(num) {
+    const finalNum = (num + 3);
+    printToDom(`<h2>${finalNum}</h2>`, 'allTheNumbers');
+}
+
+function printToDom(string, divId) {
+    const div = document.getElementById(divId);
+    div.innerHTML += string;
+}
+
+numberAdder(18);
+numberAdder(4);
+numberAdder(4);
+numberAdder(4);
+numberAdder(4);
+
+printToDom('I am ready for lunch', 'feelings');
